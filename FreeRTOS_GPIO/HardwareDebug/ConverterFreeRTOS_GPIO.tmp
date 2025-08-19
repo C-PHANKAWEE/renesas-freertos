@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\HardwareDebug\\FreeRTOS_GPIO_c.ud" 
+-input="FreeRTOS_GPIO.abs" 
+-form=stype 
+-output="FreeRTOS_GPIO.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

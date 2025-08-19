@@ -1,0 +1,652 @@
+Renesas Optimizing Linker (W3.07.00 )             18-Aug-2025 17:28:50
+
+*** Options ***
+
+-subcommand=LinkerCCRX_blinky.tmp
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\CCRX_blinky\HardwareDebug/CCRX_blinky_l.ud" 
+-noprelink 
+-input=".\src\CCRX_blinky.obj"
+-input=".\src/smc_gen/Config_ICU\Config_ICU.obj"
+-input=".\src/smc_gen/Config_ICU\Config_ICU_user.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx65n\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_mapped_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\vecttbl.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-library=".\CCRX_blinky.lib"
+-output="CCRX_blinky.abs" 
+-form=absolute 
+-nomessage 
+-vect=_undefined_interrupt_source_isr 
+-list 
+-show=symbol 
+-nooptimize 
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFE00000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC,BEXRAM_1,REXRAM_1,BEXRAM_2,REXRAM_2,BEXRAM,REXRAM/00800000 
+-rom=D=R,D_1=R_1,D_2=R_2,DEXRAM=REXRAM,DEXRAM_1=REXRAM_1,DEXRAM_2=REXRAM_2 
+-cpu=RAM=00000000-0003ffff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0009ffff,FIX=000a0000-000a3fff,RAM=000a4000-000a5fff,FIX=000a6000-000bffff,FIX=000c0000-000dffff,FIX=000e0000-000fffff,ROM=00100000-00107fff,FIX=007fc000-007fcfff,FIX=007fe000-007fffff,RAM=00800000-0085ffff,RAM=fe7f5d00-fe7f5d7f,RAM=fe7f7d70-fe7f7d9f,ROM=ffe00000-ffffffff 
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00001003      1000   4
+SI
+                                  00001004  00001403       400   4
+B_1
+                                  00001404  0000142b        28   1
+R_1
+                                  0000142c  0000147b        50   1
+B_2
+                                  0000147c  00001483         8   2
+R_2
+                                  00001484  00001484         0   1
+B
+                                  00001484  00001c2f       7ac   4
+R
+                                  00001c30  00001d2b        fc   4
+BEXRAM_1
+                                  00800000  00800000         0   1
+REXRAM_1
+                                  00800000  00800000         0   1
+BEXRAM_2
+                                  00800000  00800000         0   1
+REXRAM_2
+                                  00800000  00800000         0   1
+BEXRAM
+                                  00800000  00800000         0   1
+REXRAM
+                                  00800000  00800000         0   1
+$ADDR_C_FE7F5D00
+                                  fe7f5d00  fe7f5d0b         c   1
+$ADDR_C_FE7F5D10
+                                  fe7f5d10  fe7f5d13         4   1
+$ADDR_C_FE7F5D20
+                                  fe7f5d20  fe7f5d23         4   1
+$ADDR_C_FE7F5D40
+                                  fe7f5d40  fe7f5d43         4   1
+$ADDR_C_FE7F5D48
+                                  fe7f5d48  fe7f5d4b         4   1
+$ADDR_C_FE7F5D50
+                                  fe7f5d50  fe7f5d5f        10   1
+$ADDR_C_FE7F5D64
+                                  fe7f5d64  fe7f5d67         4   1
+$ADDR_C_FE7F5D70
+                                  fe7f5d70  fe7f5d73         4   1
+PResetPRG
+                                  ffe00000  ffe00055        56   1
+C_1
+                                  ffe00056  ffe00056         0   1
+C_2
+                                  ffe00056  ffe0005b         6   2
+C
+                                  ffe0005c  ffe000d3        78   4
+C$DSEC
+                                  ffe000d4  ffe0011b        48   4
+C$BSEC
+                                  ffe0011c  ffe0014b        30   4
+C$VECT
+                                  ffe0014c  ffe0054b       400   4
+D
+                                  ffe0054c  ffe00647        fc   4
+DEXRAM
+                                  ffe00648  ffe00648         0   1
+DEXRAM_1
+                                  ffe00648  ffe00648         0   1
+DEXRAM_2
+                                  ffe00648  ffe00648         0   1
+D_1
+                                  ffe00648  ffe00697        50   1
+D_2
+                                  ffe00698  ffe00698         0   1
+W
+                                  ffe00698  ffe00698         0   4
+W_1
+                                  ffe00698  ffe006a7        10   1
+W_2
+                                  ffe006a8  ffe006a8         0   2
+L
+                                  ffe006a8  ffe006ed        46   4
+P
+                                  ffe006ee  ffe02019      192c   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=SU
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  00000004  00001003      1000
+
+SECTION=SI
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  00001004  00001403       400
+
+SECTION=B_1
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00001404  0000142b        28
+  _flmod
+                                  00001404        14   data ,g         * 
+  _sml_buf
+                                  00001418        14   data ,g         * 
+
+SECTION=R_1
+FILE=xfiles
+                                  0000142c  0000147b        50
+  _ebuf
+                                  0000142c        50   data ,l         * 
+
+SECTION=B_2
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  0000147c  00001483         8
+  _s_protect_counters
+                                  0000147c         8   data ,l         * 
+
+SECTION=B
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00001484  000014d3        50
+  __Files
+                                  00001484        50   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\mcu_locks.obj
+                                  000014d4  000016a3       1d0
+  _g_bsp_Locks
+                                  000014d4       1d0   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_interrupts.obj
+                                  000016a4  00001827       184
+  _g_bsp_vectors
+                                  000016a4       184   data ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  00001828  00001c2b       404
+  __s1ptr
+                                  00001828         4   data ,g         * 
+  _s_heap_area
+                                  0000182c       400   data ,l         * 
+FILE=_errno
+                                  00001c2c  00001c2f         4
+  __errno
+                                  00001c2c         4   data ,g         * 
+
+SECTION=R
+FILE=.\src\CCRX_blinky.obj
+                                  00001c30  00001c33         4
+  _blinkDelay
+                                  00001c30         4   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00001c34  00001c47        14
+  _env_list
+                                  00001c34        10   data ,g         * 
+  _environ
+                                  00001c44         4   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  00001c48  00001c4b         4
+  _sp_brk
+                                  00001c48         4   data ,l         * 
+FILE=xfiles
+                                  00001c4c  00001d23        d8
+  __Stdin
+                                  00001c4c        48   data ,g         * 
+  __Stdout
+                                  00001c94        48   data ,g         * 
+  __Stderr
+                                  00001cdc        48   data ,g         * 
+FILE=malloc
+                                  00001d24  00001d2b         8
+  __Aldata
+                                  00001d24         8   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D00
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d00  fe7f5d0b         c
+  ___MDEreg
+                                  fe7f5d00         4   data ,g         * 
+  ___OFS0reg
+                                  fe7f5d04         4   data ,g         * 
+  ___OFS1reg
+                                  fe7f5d08         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D10
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d10  fe7f5d13         4
+  ___TMINFreg
+                                  fe7f5d10         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D20
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d20  fe7f5d23         4
+  ___BANKSELreg
+                                  fe7f5d20         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D40
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d40  fe7f5d43         4
+  ___SPCCreg
+                                  fe7f5d40         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D48
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d48  fe7f5d4b         4
+  ___TMEFreg
+                                  fe7f5d48         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D50
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d50  fe7f5d5f        10
+  ___OSIS1reg
+                                  fe7f5d50         4   data ,g         * 
+  ___OSIS2reg
+                                  fe7f5d54         4   data ,g         * 
+  ___OSIS3reg
+                                  fe7f5d58         4   data ,g         * 
+  ___OSIS4reg
+                                  fe7f5d5c         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D64
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d64  fe7f5d67         4
+  ___FAWreg
+                                  fe7f5d64         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D70
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d70  fe7f5d73         4
+  ___ROMCODEreg
+                                  fe7f5d70         4   data ,g         * 
+
+SECTION=PResetPRG
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  ffe00000  ffe00055        56
+  _PowerON_Reset_PC
+                                  ffe00000        56   entry,g         * 
+
+SECTION=C_2
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  ffe00056  ffe0005b         6
+  _s_prcr_masks
+                                  ffe00056         6   data ,l         * 
+
+SECTION=C
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe0005c  ffe00073        18
+  __CTBL
+                                  ffe0005c        18   data ,g         * 
+FILE=_nfiles
+                                  ffe00074  ffe00077         4
+  __nfiles
+                                  ffe00074         4   data ,g         * 
+FILE=xfoprep
+                                  ffe00078  ffe000bf        48
+  _init$1
+                                  ffe00078        48   data ,l         * 
+FILE=xfopen
+                                  ffe000c0  ffe000cf        10
+  _rwacc$1
+                                  ffe000c0        10   data ,l         * 
+FILE=_sbrk_si
+                                  ffe000d0  ffe000d3         4
+  __sbrk_size
+                                  ffe000d0         4   data ,g         * 
+
+SECTION=C$DSEC
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe000d4  ffe0011b        48
+  __DTBL
+                                  ffe000d4        48   data ,g         * 
+
+SECTION=C$BSEC
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe0011c  ffe0014b        30
+  __BTBL
+                                  ffe0011c        30   data ,g         * 
+
+SECTION=C$VECT
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  ffe0014c  ffe0054b       400
+
+SECTION=D
+FILE=.\src\CCRX_blinky.obj
+                                  ffe0054c  ffe0054f         4
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  ffe00550  ffe00563        14
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  ffe00564  ffe00567         4
+FILE=xfiles
+                                  ffe00568  ffe0063f        d8
+FILE=malloc
+                                  ffe00640  ffe00647         8
+
+SECTION=D_1
+FILE=xfiles
+                                  ffe00648  ffe00697        50
+
+SECTION=W_1
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  ffe00698  ffe006a7        10
+
+SECTION=L
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe006a8  ffe006ab         4
+  _deadSpace
+                                  ffe006a8         4   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  ffe006ac  ffe006ed        42
+
+SECTION=P
+FILE=.\src\CCRX_blinky.obj
+                                  ffe006ee  ffe0073c        4f
+  _main
+                                  ffe006ee        4f   func ,g         * 
+FILE=.\src\smc_gen\Config_ICU\Config_ICU.obj
+                                  ffe0073d  ffe0079f        63
+  _R_Config_ICU_Create
+                                  ffe0073d        53   func ,g         * 
+  _R_Config_ICU_IRQ4_Start
+                                  ffe00790         8   func ,g         * 
+  _R_Config_ICU_IRQ4_Stop
+                                  ffe00798         8   func ,g         * 
+FILE=.\src\smc_gen\Config_ICU\Config_ICU_user.obj
+                                  ffe007a0  ffe007c1        22
+  _R_Config_ICU_Create_UserInit
+                                  ffe007a0         1   func ,g         * 
+  _r_Config_ICU_irq4_interrupt
+                                  ffe007a1        21   func ,l         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT.obj
+                                  ffe007c2  ffe007df        1e
+  _R_Config_PORT_Create
+                                  ffe007c2        1e   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT_user.obj
+                                  ffe007e0  ffe007e0         1
+  _R_Config_PORT_Create_UserInit
+                                  ffe007e0         1   func ,g         * 
+FILE=.\src\smc_gen\general\r_cg_hardware_setup.obj
+                                  ffe007e1  ffe00820        40
+  _r_undefined_exception
+                                  ffe007e1         1   func ,g         * 
+  _R_Systeminit
+                                  ffe007e2        3f   func ,g         * 
+FILE=.\src\smc_gen\general\r_smc_cgc.obj
+                                  ffe00821  ffe00824         4
+  _R_CGC_Create
+                                  ffe00821         4   func ,g         * 
+FILE=.\src\smc_gen\general\r_smc_cgc_user.obj
+                                  ffe00825  ffe00825         1
+  _R_CGC_Create_UserInit
+                                  ffe00825         1   func ,g         * 
+FILE=.\src\smc_gen\general\r_smc_interrupt.obj
+                                  ffe00826  ffe00826         1
+  _R_Interrupt_Create
+                                  ffe00826         1   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\board\generic_rx65n\hwsetup.obj
+                                  ffe00827  ffe008a9        83
+  _hardware_setup
+                                  ffe00827        12   func ,g         * 
+  _output_ports_configure
+                                  ffe00839         2   func ,l         * 
+  _interrupts_configure
+                                  ffe0083b         2   func ,l         * 
+  _peripheral_modules_enable
+                                  ffe0083d         4   func ,l         * 
+  _bsp_adc_initial_configure
+                                  ffe00841        3c   func ,l         * 
+  _bsp_bsc_initial_configure
+                                  ffe0087d        2d   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowlvl.obj
+                                  ffe008aa  ffe008cb        22
+  _charput
+                                  ffe008aa        10   func ,g         * 
+  _charget
+                                  ffe008ba        12   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  ffe008cc  ffe00a52       187
+  _init_iolib
+                                  ffe008cc        84   func ,g         * 
+  _close_all
+                                  ffe00950        2a   func ,g         * 
+  _open
+                                  ffe0097a        67   func ,g         * 
+  _close
+                                  ffe009e1         3   func ,g         * 
+  _write
+                                  ffe009e4        37   func ,g         * 
+  _read
+                                  ffe00a1b        34   func ,g         * 
+  _lseek
+                                  ffe00a4f         4   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  ffe00a53  ffe00b22        d0
+  _R_BSP_GetVersion
+                                  ffe00a53         6   func ,g         * 
+  _R_BSP_GetIClkFreqHz
+                                  ffe00a59         4   func ,g         * 
+  _R_BSP_SoftwareDelay
+                                  ffe00a5d        c6   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  ffe00b23  ffe00c92       170
+  _R_BSP_InterruptsDisable
+                                  ffe00b23         9   func ,g         * 
+  _R_BSP_InterruptsEnable
+                                  ffe00b2c         9   func ,g         * 
+  _R_BSP_CpuInterruptLevelRead
+                                  ffe00b35         8   func ,g         * 
+  _R_BSP_CpuInterruptLevelWrite
+                                  ffe00b3d        5c   func ,g         * 
+  _R_BSP_RegisterProtectEnable
+                                  ffe00b99        67   func ,g         * 
+  _R_BSP_RegisterProtectDisable
+                                  ffe00c00        5d   func ,g         * 
+  _R_BSP_SoftwareReset
+                                  ffe00c5d        11   func ,g         * 
+  _bsp_register_protect_open
+                                  ffe00c6e        12   func ,g         * 
+  _bsp_ram_initialize
+                                  ffe00c80        13   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_interrupts.obj
+                                  ffe00c93  ffe0103e       3ac
+  _R_BSP_InterruptRequestEnable
+                                  ffe00c93         e   func ,g         * 
+  _R_BSP_InterruptRequestDisable
+                                  ffe00ca1         e   func ,g         * 
+  _bsp_interrupt_open
+                                  ffe00caf        1a   func ,g         * 
+  _R_BSP_InterruptWrite
+                                  ffe00cc9        31   func ,g         * 
+  _R_BSP_InterruptRead
+                                  ffe00cfa        1b   func ,g         * 
+  _R_BSP_InterruptControl
+                                  ffe00d15        75   func ,g         * 
+  _bsp_fit_interrupts_control
+                                  ffe00d8a        40   func ,l         * 
+  _bsp_gr_int_enable_disable
+                                  ffe00dca       126   func ,l         * 
+  _excep_supervisor_inst_isr
+                                  ffe00ef0        17   func ,g         * 
+  _excep_access_isr
+                                  ffe00f07        17   func ,g         * 
+  _excep_undefined_inst_isr
+                                  ffe00f1e        17   func ,g         * 
+  _excep_floating_point_isr
+                                  ffe00f35        21   func ,g         * 
+  _non_maskable_isr
+                                  ffe00f56        b4   func ,g         * 
+  _undefined_interrupt_source_isr
+                                  ffe0100a        17   func ,g         * 
+  _bus_error_isr
+                                  ffe01021        1e   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_locking.obj
+                                  ffe0103f  ffe0106e        30
+  _R_BSP_SoftwareLock
+                                  ffe0103f        10   func ,g         * 
+  _R_BSP_SoftwareUnlock
+                                  ffe0104f         6   func ,g         * 
+  _R_BSP_HardwareLock
+                                  ffe01055         d   func ,g         * 
+  _R_BSP_HardwareUnlock
+                                  ffe01062         d   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  ffe0106f  ffe0108f        21
+  _sbrk
+                                  ffe0106f        21   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_clocks.obj
+                                  ffe01090  ffe01240       1b1
+  _get_iclk_freq_hz
+                                  ffe01090        8a   func ,g         * 
+  _mcu_clock_setup
+                                  ffe0111a         0   func ,g         * 
+  _operating_frequency_set
+                                  ffe0111a        52   func ,l         * 
+  _clock_source_select
+                                  ffe0116c        d5   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_init.obj
+                                  ffe01241  ffe012e1        a1
+  _bsp_non_existent_port_init
+                                  ffe01241        a1   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_interrupts.obj
+                                  ffe012e2  ffe018ea       609
+  _bsp_interrupt_enable_disable
+                                  ffe012e2        c0   func ,g         * 
+  _group_bl0_handler_isr
+                                  ffe013a2       203   func ,l         * 
+  _group_bl1_handler_isr
+                                  ffe015a5       1ae   func ,l         * 
+  _group_bl2_handler_isr
+                                  ffe01753        25   func ,l         * 
+  _group_al0_handler_isr
+                                  ffe01778        c0   func ,l         * 
+  _group_al1_handler_isr
+                                  ffe01838        6b   func ,l         * 
+  _group_be0_handler_isr
+                                  ffe018a3        48   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_mapped_interrupts.obj
+                                  ffe018eb  ffe01afe       214
+  _bsp_mapped_interrupt_open
+                                  ffe018eb       214   func ,g         * 
+FILE=.\src\smc_gen\r_pincfg\Pin.obj
+                                  ffe01aff  ffe01b2c        2e
+  _R_Pins_Create
+                                  ffe01aff        2e   func ,g         * 
+FILE=freopen
+                                  ffe01b2d  ffe01b59        2d
+  _freopen
+                                  ffe01b2d        2d   func ,g         * 
+FILE=fclose
+                                  ffe01b5a  ffe01bad        54
+  _fclose
+                                  ffe01b5a        54   func ,g         * 
+FILE=__COM_DIV64u
+                                  ffe01bae  ffe01c46        99
+  __COM_DIV64u
+                                  ffe01bae         0   none ,g         * 
+  _Loop_Init
+                                  ffe01bb8         0   none ,l         * 
+  _Loop
+                                  ffe01bc0         0   none ,l         * 
+  _DivStart
+                                  ffe01bcc         0   none ,l         * 
+  _Success
+                                  ffe01bda         0   none ,l         * 
+  _DivEnd
+                                  ffe01be6         0   none ,l         * 
+  IXI6DIV
+                                  ffe01beb         0   none ,l         * 
+  IXI4DIV
+                                  ffe01bfd         0   none ,l         * 
+  IXI2DIV
+                                  ffe01c0d         0   none ,l         * 
+  I8I2DIV
+                                  ffe01c15         0   none ,l         * 
+  I4I2DIV
+                                  ffe01c43         0   none ,l         * 
+  _i8divU_End
+                                  ffe01c46         0   none ,l         * 
+FILE=__initsct
+                                  ffe01c47  ffe01c90        4a
+  __INITSCT
+                                  ffe01c47         0   none ,g         * 
+  loop1
+                                  ffe01c59         0   none ,l         * 
+  next_loop1
+                                  ffe01c67         0   none ,l         * 
+  loop3
+                                  ffe01c79         0   none ,l         * 
+  next_loop3
+                                  ffe01c8a         0   none ,l         * 
+FILE=fflush
+                                  ffe01c91  ffe01d12        82
+  _fflush
+                                  ffe01c91        82   func ,g         * 
+FILE=xfoprep
+                                  ffe01d13  ffe01de4        d2
+  __Foprep
+                                  ffe01d13        d2   func ,g         * 
+FILE=xfofind
+                                  ffe01de5  ffe01e71        8d
+  __Fofind
+                                  ffe01de5        44   func ,g         * 
+  __Fofree
+                                  ffe01e29        49   func ,g         * 
+FILE=free
+                                  ffe01e72  ffe01ef3        82
+  _free
+                                  ffe01e72        82   func ,g         * 
+FILE=xfopen
+                                  ffe01ef4  ffe01f23        30
+  __Fopen
+                                  ffe01ef4        30   func ,g         * 
+FILE=malloc
+                                  ffe01f24  ffe01ffe        db
+  _findmem
+                                  ffe01f24        79   func ,l         * 
+  _malloc
+                                  ffe01f9d        62   func ,g         * 
+FILE=xgetmem
+                                  ffe01fff  ffe02019        1b
+  __Getmem
+                                  ffe01fff        1b   func ,g         * 
+
+SECTION=EXCEPTVECT
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  ffffff80  fffffffb        7c
+  _Except_Vectors
+                                  ffffff80        7c   data ,g         * 
+
+SECTION=RESETVECT
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fffffffc  ffffffff         4
+  _Reset_Vector
+                                  fffffffc         4   data ,g         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO

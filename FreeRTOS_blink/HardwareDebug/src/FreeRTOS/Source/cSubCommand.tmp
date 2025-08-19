@@ -1,0 +1,22 @@
+-isa=rxv2
+-fpu
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\HardwareDebug\src\FreeRTOS\Source"
+-include="C:\Program Files (x86)\Renesas\RX\3_7_0\/include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\FreeRTOS\Source\include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\FreeRTOS\Source\portable\Renesas\RX600v2"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\frtos_startup"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\frtos_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\smc_gen\general"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\smc_gen\r_pincfg"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\smc_gen\r_bsp"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\smc_gen"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\smc_gen\r_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\src\smc_gen\Config_PORT"
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src/FreeRTOS/Source"
+-debug
+-outcode=utf8
+-nologo

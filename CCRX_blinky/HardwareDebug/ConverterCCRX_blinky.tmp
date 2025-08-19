@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\CCRX_blinky\HardwareDebug\\CCRX_blinky_c.ud" 
+-input="CCRX_blinky.abs" 
+-form=stype 
+-output="CCRX_blinky.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

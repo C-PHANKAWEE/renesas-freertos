@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\Users\pchulaka\Desktop\e2_studio\CCRX_blinky\HardwareDebug\\CCRX_blinky_lbg.ud" 
+-isa=rxv2 
+-fpu 
+-lang=c99 
+-head=runtime,stdio,stdlib,string,new 
+-output="CCRX_blinky.lib" 
+-nologo

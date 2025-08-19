@@ -1,0 +1,24 @@
+-isa=rxv2
+-fpu
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\HardwareDebug\src"
+-include="C:\Program Files (x86)\Renesas\RX\3_7_0\/include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\FreeRTOS\Source\include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\FreeRTOS\Source\portable\Renesas\RX600v2"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\frtos_startup"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\frtos_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\general"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\r_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\r_pincfg"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\r_bsp"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\r_gpio_rx\src"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\r_gpio_rx"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_GPIO\src\smc_gen\Config_PORT"
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src"
+-debug
+-outcode=utf8
+-nologo

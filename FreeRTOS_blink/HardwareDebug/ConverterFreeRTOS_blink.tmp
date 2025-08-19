@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_blink\HardwareDebug\\FreeRTOS_blink_c.ud" 
+-input="FreeRTOS_blink.abs" 
+-form=stype 
+-output="FreeRTOS_blink.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit
