@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\HardwareDebug\\FreeRTOS_SCI_UART_lbg.ud" 
+-isa=rxv2 
+-fpu 
+-lang=c99 
+-head=runtime,stdio,stdlib,string,new 
+-output="FreeRTOS_SCI_UART.lib" 
+-nologo

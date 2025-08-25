@@ -1,0 +1,25 @@
+-isa=rxv2
+-fpu
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\HardwareDebug\src\smc_gen\r_pincfg"
+-include="C:\Program Files (x86)\Renesas\RX\3_7_0\/include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\FreeRTOS\Source\include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\FreeRTOS\Source\portable\Renesas\RX600v2"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\frtos_startup"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\frtos_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_pincfg"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\general"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_bsp"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_sci_rx\src"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_sci_rx"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_byteq"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_byteq\src"
+-lang=c99
+-utf8
+-nomessage
+-output=obj
+-obj_path="src/smc_gen/r_pincfg"
+-debug
+-outcode=utf8
+-nologo

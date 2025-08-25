@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Semaphore\HardwareDebug\\FreeRTOS_Semaphore_c.ud" 
+-input="FreeRTOS_Semaphore.abs" 
+-form=stype 
+-output="FreeRTOS_Semaphore.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

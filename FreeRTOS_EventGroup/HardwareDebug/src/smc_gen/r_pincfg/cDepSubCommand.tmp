@@ -1,0 +1,20 @@
+-MM
+-MP
+-isa=rxv2
+-fpu
+-include="C:\Program Files (x86)\Renesas\RX\3_7_0\/include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\FreeRTOS\Source\include"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\FreeRTOS\Source\portable\Renesas\RX600v2"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\frtos_startup"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\frtos_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\smc_gen\r_bsp"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\smc_gen\general"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\smc_gen\r_pincfg"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\smc_gen\r_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\src\smc_gen"
+-lang=c99
+-utf8
+-nomessage
+-debug
+-outcode=utf8
+-nologo

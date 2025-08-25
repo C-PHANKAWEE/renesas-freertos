@@ -1,0 +1,12 @@
+-MM
+-MP
+-isa=rxv2
+-fpu
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\src\smc_gen\general"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\src\smc_gen\r_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\src\smc_gen\r_pincfg"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\src\smc_gen"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\src\smc_gen\r_bsp"
+-utf8
+-debug
+-nologo

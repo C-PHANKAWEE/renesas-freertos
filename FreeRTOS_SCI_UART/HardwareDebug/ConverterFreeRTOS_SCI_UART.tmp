@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\HardwareDebug\\FreeRTOS_SCI_UART_c.ud" 
+-input="FreeRTOS_SCI_UART.abs" 
+-form=stype 
+-output="FreeRTOS_SCI_UART.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

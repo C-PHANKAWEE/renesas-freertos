@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\HardwareDebug\\FreeRTOS_EventGroup_c.ud" 
+-input="FreeRTOS_EventGroup.abs" 
+-form=stype 
+-output="FreeRTOS_EventGroup.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

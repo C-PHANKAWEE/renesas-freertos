@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_EventGroup\HardwareDebug\\FreeRTOS_EventGroup_lbg.ud" 
+-isa=rxv2 
+-fpu 
+-lang=c99 
+-head=runtime,stdio,stdlib,string,new 
+-output="FreeRTOS_EventGroup.lib" 
+-nologo

@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\HardwareDebug\\FreeRTOS_Queue_c.ud" 
+-input="FreeRTOS_Queue.abs" 
+-form=stype 
+-output="FreeRTOS_Queue.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

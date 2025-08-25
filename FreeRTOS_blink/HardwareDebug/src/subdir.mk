@@ -13,7 +13,7 @@ C_DEPS += \
 src/FreeRTOS_blink.d 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.obj: ../src/%.c src/Compiler.sub
+src/%.obj: ../src/%.c 
 	@echo 'Scanning and building file: $<'
 	ccrx -subcommand="src\cDepSubCommand.tmp" -output=dep="$(@:%.obj=%.d)" -MT="$(@:%.d=%.obj)" -MT="$(@:%.obj=%.d)" "$<"
 	ccrx -subcommand="src\cSubCommand.tmp" "$<"

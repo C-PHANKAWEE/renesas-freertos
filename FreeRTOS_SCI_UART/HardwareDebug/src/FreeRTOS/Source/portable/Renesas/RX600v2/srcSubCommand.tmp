@@ -1,0 +1,15 @@
+-isa=rxv2
+-fpu
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\HardwareDebug\src\FreeRTOS\Source\portable\Renesas\RX600v2"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_pincfg"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\general"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_bsp"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_config"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_sci_rx\src"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_sci_rx"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_byteq"
+-include="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_SCI_UART\src\smc_gen\r_byteq\src"
+-utf8
+-debug
+-nologo

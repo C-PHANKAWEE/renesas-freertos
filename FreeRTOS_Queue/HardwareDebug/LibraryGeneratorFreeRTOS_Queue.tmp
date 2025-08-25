@@ -1,0 +1,7 @@
+-MAKEUD_LBG="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Queue\HardwareDebug\\FreeRTOS_Queue_lbg.ud" 
+-isa=rxv2 
+-fpu 
+-lang=c99 
+-head=runtime,stdio,stdlib,string,new 
+-output="FreeRTOS_Queue.lib" 
+-nologo

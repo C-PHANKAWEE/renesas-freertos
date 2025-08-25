@@ -12,17 +12,45 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "r_smc_entry.h"
+#include "semphr.h"
 
 #if BSP_CFG_CPLUSPLUS == 1
 extern void abort(void);
 #endif
 
+volatile int shared_resource = 0;
+SemaphoreHandle_t xBinarySemaphore;
+
+void task_access_resource_1(void *pv){
+	while(1){
+		if(xSemaphoreTake(xBinarySemaphore, portMAX_DELAY) == pdTRUE){
+			shared_resource++;
+			xSemaphoreGive(xBinarySemaphore);
+		}
+		vTaskDelay(pdMS_TO_TICKS(100));
+	}
+}
+
+void task_access_resource_2(void *pv){
+	while(1){
+		if(xSemaphoreTake(xBinarySemaphore, portMAX_DELAY) == pdTRUE){
+			shared_resource++;
+			xSemaphoreGive(xBinarySemaphore);
+		}
+		vTaskDelay(pdMS_TO_TICKS(100));
+	}
+}
+
 void main_task(void *pvParameters)
 {
 
     /* Create all other application tasks here */
-
-    /* WAIT_LOOP */
+	xBinarySemaphore = xSemaphoreCreateBinary();
+	xSemaphoreGive(xBinarySemaphore);
+	xTaskCreate(task_access_resource_1, "Task1", 256, NULL, 1, NULL);
+	xTaskCreate(task_access_resource_2, "Task2", 256, NULL, 1, NULL);
+	vTaskStartScheduler();
+	/* WAIT_LOOP */
     while(1) {
         vTaskDelay(10000);
     }
