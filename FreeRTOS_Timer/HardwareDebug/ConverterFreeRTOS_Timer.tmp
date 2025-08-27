@@ -1,0 +1,8 @@
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Timer\HardwareDebug\\FreeRTOS_Timer_c.ud" 
+-input="FreeRTOS_Timer.abs" 
+-form=stype 
+-output="FreeRTOS_Timer.mot" 
+-byte_count=10 
+-nologo 
+-nomessage 
+-exit

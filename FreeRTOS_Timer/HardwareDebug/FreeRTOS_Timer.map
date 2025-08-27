@@ -1,0 +1,1172 @@
+Renesas Optimizing Linker (W3.07.00 )             26-Aug-2025 09:38:11
+
+*** Options ***
+
+-subcommand=LinkerFreeRTOS_Timer.tmp
+-MAKEUD="C:\Users\pchulaka\Desktop\e2_studio\FreeRTOS_Timer\HardwareDebug/FreeRTOS_Timer_l.ud" 
+-noprelink 
+-input=".\src/FreeRTOS/Source/portable/Renesas/RX600v2\port_asm.obj"
+-input=".\src/FreeRTOS/Source\croutine.obj"
+-input=".\src/FreeRTOS/Source\event_groups.obj"
+-input=".\src/FreeRTOS/Source\list.obj"
+-input=".\src/FreeRTOS/Source/portable/MemMang\heap_4.obj"
+-input=".\src/FreeRTOS/Source/portable/Renesas/RX600v2\port.obj"
+-input=".\src/FreeRTOS/Source\queue.obj"
+-input=".\src/FreeRTOS/Source\stream_buffer.obj"
+-input=".\src/FreeRTOS/Source\tasks.obj"
+-input=".\src/FreeRTOS/Source\timers.obj"
+-input=".\src\FreeRTOS_Timer.obj"
+-input=".\src/frtos_startup\freertos_object_init.obj"
+-input=".\src/frtos_startup\freertos_start.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/general\r_cg_hardware_setup.obj"
+-input=".\src/smc_gen/general\r_smc_cgc.obj"
+-input=".\src/smc_gen/general\r_smc_cgc_user.obj"
+-input=".\src/smc_gen/general\r_smc_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rx65n\hwsetup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\dbsct.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowlvl.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\lowsrc.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\mcu_locks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_cpu.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_locking.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_mcu_startup.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_software_interrupt.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_rx_intrinsic_functions.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\resetprg.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\sbrk.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_clocks.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\mcu_mapped_interrupts.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rx65n\vecttbl.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-library=".\FreeRTOS_Timer.lib"
+-output="FreeRTOS_Timer.abs" 
+-form=absolute 
+-nomessage 
+-vect=_undefined_interrupt_source_isr 
+-list 
+-show=symbol 
+-nooptimize 
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFE00000,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC,BEXRAM_1,REXRAM_1,BEXRAM_2,REXRAM_2,BEXRAM,REXRAM/00800000 
+-rom=D=R,D_1=R_1,D_2=R_2,DEXRAM=REXRAM,DEXRAM_1=REXRAM_1,DEXRAM_2=REXRAM_2 
+-cpu=RAM=00000000-0003ffff,FIX=00080000-00083fff,FIX=00086000-00087fff,FIX=00088000-0009ffff,FIX=000a0000-000a3fff,RAM=000a4000-000a5fff,FIX=000a6000-000bffff,FIX=000c0000-000dffff,FIX=000e0000-000fffff,ROM=00100000-00107fff,FIX=007fc000-007fcfff,FIX=007fe000-007fffff,RAM=00800000-0085ffff,RAM=fe7f5d00-fe7f5d7f,RAM=fe7f7d70-fe7f7d9f,ROM=ffe00000-ffffffff 
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00001003      1000   4
+SI
+                                  00001004  00001403       400   4
+B_1
+                                  00001404  0000342b      2028   1
+R_1
+                                  0000342c  0000347b        50   1
+B_2
+                                  0000347c  00003483         8   2
+R_2
+                                  00003484  00003484         0   1
+B
+                                  00003484  00003d5f       8dc   4
+R
+                                  00003d60  00003eb3       154   4
+BEXRAM_1
+                                  00800000  00800000         0   1
+REXRAM_1
+                                  00800000  00800000         0   1
+BEXRAM_2
+                                  00800000  00800000         0   1
+REXRAM_2
+                                  00800000  00800000         0   1
+BEXRAM
+                                  00800000  00800000         0   1
+REXRAM
+                                  00800000  00800000         0   1
+$ADDR_C_FE7F5D00
+                                  fe7f5d00  fe7f5d0b         c   1
+$ADDR_C_FE7F5D10
+                                  fe7f5d10  fe7f5d13         4   1
+$ADDR_C_FE7F5D20
+                                  fe7f5d20  fe7f5d23         4   1
+$ADDR_C_FE7F5D40
+                                  fe7f5d40  fe7f5d43         4   1
+$ADDR_C_FE7F5D48
+                                  fe7f5d48  fe7f5d4b         4   1
+$ADDR_C_FE7F5D50
+                                  fe7f5d50  fe7f5d5f        10   1
+$ADDR_C_FE7F5D64
+                                  fe7f5d64  fe7f5d67         4   1
+$ADDR_C_FE7F5D70
+                                  fe7f5d70  fe7f5d73         4   1
+PResetPRG
+                                  ffe00000  ffe00064        65   1
+C_1
+                                  ffe00065  ffe00065         0   1
+C_2
+                                  ffe00066  ffe0006b         6   2
+C
+                                  ffe0006c  ffe000e7        7c   4
+C$DSEC
+                                  ffe000e8  ffe0012f        48   4
+C$BSEC
+                                  ffe00130  ffe0015f        30   4
+C$VECT
+                                  ffe00160  ffe0055f       400   4
+D
+                                  ffe00560  ffe006b3       154   4
+DEXRAM
+                                  ffe006b4  ffe006b4         0   1
+DEXRAM_1
+                                  ffe006b4  ffe006b4         0   1
+DEXRAM_2
+                                  ffe006b4  ffe006b4         0   1
+D_1
+                                  ffe006b4  ffe00703        50   1
+D_2
+                                  ffe00704  ffe00704         0   1
+W
+                                  ffe00704  ffe00704         0   4
+W_1
+                                  ffe00704  ffe00713        10   1
+W_2
+                                  ffe00714  ffe00714         0   2
+L
+                                  ffe00714  ffe00781        6e   4
+P
+                                  ffe00782  ffe053cc      4c4b   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=SU
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  00000004  00001003      1000
+
+SECTION=SI
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  00001004  00001403       400
+
+SECTION=B_1
+FILE=.\src\FreeRTOS\Source\portable\MemMang\heap_4.obj
+                                  00001404  00003403      2000
+  _ucHeap
+                                  00001404      2000   data ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00003404  0000342b        28
+  _flmod
+                                  00003404        14   data ,g         * 
+  _sml_buf
+                                  00003418        14   data ,g         * 
+
+SECTION=R_1
+FILE=xfiles
+                                  0000342c  0000347b        50
+  _ebuf
+                                  0000342c        50   data ,l         * 
+
+SECTION=B_2
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  0000347c  00003483         8
+  _s_protect_counters
+                                  0000347c         8   data ,l         * 
+
+SECTION=B
+FILE=.\src\FreeRTOS\Source\portable\MemMang\heap_4.obj
+                                  00003484  0000348b         8
+  _xStart
+                                  00003484         8   data ,l         * 
+FILE=.\src\FreeRTOS\Source\tasks.obj
+                                  0000348c  00003583        f8
+  _pxReadyTasksLists
+                                  0000348c        8c   data ,l         * 
+  _xDelayedTaskList1
+                                  00003518        14   data ,l         * 
+  _xDelayedTaskList2
+                                  0000352c        14   data ,l         * 
+  _pxDelayedTaskList
+                                  00003540         4   data ,l         * 
+  _pxOverflowDelayedTaskList
+                                  00003544         4   data ,l         * 
+  _xPendingReadyList
+                                  00003548        14   data ,l         * 
+  _xTasksWaitingTermination
+                                  0000355c        14   data ,l         * 
+  _xSuspendedTaskList
+                                  00003570        14   data ,l         * 
+FILE=.\src\FreeRTOS\Source\timers.obj
+                                  00003584  000035b3        30
+  _xActiveTimerList1
+                                  00003584        14   data ,l         * 
+  _xActiveTimerList2
+                                  00003598        14   data ,l         * 
+  _pxCurrentTimerList
+                                  000035ac         4   data ,l         * 
+  _pxOverflowTimerList
+                                  000035b0         4   data ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  000035b4  00003603        50
+  __Files
+                                  000035b4        50   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\mcu_locks.obj
+                                  00003604  000037d3       1d0
+  _g_bsp_Locks
+                                  00003604       1d0   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_interrupts.obj
+                                  000037d4  00003957       184
+  _g_bsp_vectors
+                                  000037d4       184   data ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  00003958  00003d5b       404
+  __s1ptr
+                                  00003958         4   data ,g         * 
+  _s_heap_area
+                                  0000395c       400   data ,l         * 
+FILE=_errno
+                                  00003d5c  00003d5f         4
+  __errno
+                                  00003d5c         4   data ,g         * 
+
+SECTION=R
+FILE=.\src\FreeRTOS\Source\portable\MemMang\heap_4.obj
+                                  00003d60  00003d77        18
+  _pxEnd
+                                  00003d60         4   data ,l         * 
+  _xFreeBytesRemaining
+                                  00003d64         4   data ,l         * 
+  _xMinimumEverFreeBytesRemaining
+                                  00003d68         4   data ,l         * 
+  _xNumberOfSuccessfulAllocations
+                                  00003d6c         4   data ,l         * 
+  _xNumberOfSuccessfulFrees
+                                  00003d70         4   data ,l         * 
+  _xBlockAllocatedBit
+                                  00003d74         4   data ,l         * 
+FILE=.\src\FreeRTOS\Source\portable\Renesas\RX600v2\port.obj
+                                  00003d78  00003d7b         4
+  _p_vSoftwareInterruptEntry
+                                  00003d78         4   data ,g         * 
+FILE=.\src\FreeRTOS\Source\tasks.obj
+                                  00003d7c  00003daf        34
+  _pxCurrentTCB
+                                  00003d7c         4   data ,g         * 
+  _uxDeletedTasksWaitingCleanUp
+                                  00003d80         4   data ,l         * 
+  _uxCurrentNumberOfTasks
+                                  00003d84         4   data ,l         * 
+  _xTickCount
+                                  00003d88         4   data ,l         * 
+  _uxTopReadyPriority
+                                  00003d8c         4   data ,l         * 
+  _xSchedulerRunning
+                                  00003d90         4   data ,l         * 
+  _xPendedTicks
+                                  00003d94         4   data ,l         * 
+  _xYieldPending
+                                  00003d98         4   data ,l         * 
+  _xNumOfOverflows
+                                  00003d9c         4   data ,l         * 
+  _uxTaskNumber
+                                  00003da0         4   data ,l         * 
+  _xNextTaskUnblockTime
+                                  00003da4         4   data ,l         * 
+  _xIdleTaskHandle
+                                  00003da8         4   data ,l         * 
+  _uxSchedulerSuspended
+                                  00003dac         4   data ,l         * 
+FILE=.\src\FreeRTOS\Source\timers.obj
+                                  00003db0  00003dbb         c
+  _xTimerQueue
+                                  00003db0         4   data ,l         * 
+  _xTimerTaskHandle
+                                  00003db4         4   data ,l         * 
+  _xLastTime$1
+                                  00003db8         4   data ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  00003dbc  00003dcf        14
+  _env_list
+                                  00003dbc        10   data ,g         * 
+  _environ
+                                  00003dcc         4   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  00003dd0  00003dd3         4
+  _sp_brk
+                                  00003dd0         4   data ,l         * 
+FILE=xfiles
+                                  00003dd4  00003eab        d8
+  __Stdin
+                                  00003dd4        48   data ,g         * 
+  __Stdout
+                                  00003e1c        48   data ,g         * 
+  __Stderr
+                                  00003e64        48   data ,g         * 
+FILE=malloc
+                                  00003eac  00003eb3         8
+  __Aldata
+                                  00003eac         8   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D00
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d00  fe7f5d0b         c
+  ___MDEreg
+                                  fe7f5d00         4   data ,g         * 
+  ___OFS0reg
+                                  fe7f5d04         4   data ,g         * 
+  ___OFS1reg
+                                  fe7f5d08         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D10
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d10  fe7f5d13         4
+  ___TMINFreg
+                                  fe7f5d10         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D20
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d20  fe7f5d23         4
+  ___BANKSELreg
+                                  fe7f5d20         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D40
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d40  fe7f5d43         4
+  ___SPCCreg
+                                  fe7f5d40         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D48
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d48  fe7f5d4b         4
+  ___TMEFreg
+                                  fe7f5d48         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D50
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d50  fe7f5d5f        10
+  ___OSIS1reg
+                                  fe7f5d50         4   data ,g         * 
+  ___OSIS2reg
+                                  fe7f5d54         4   data ,g         * 
+  ___OSIS3reg
+                                  fe7f5d58         4   data ,g         * 
+  ___OSIS4reg
+                                  fe7f5d5c         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D64
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d64  fe7f5d67         4
+  ___FAWreg
+                                  fe7f5d64         4   data ,g         * 
+
+SECTION=$ADDR_C_FE7F5D70
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fe7f5d70  fe7f5d73         4
+  ___ROMCODEreg
+                                  fe7f5d70         4   data ,g         * 
+
+SECTION=PResetPRG
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  ffe00000  ffe00064        65
+  _PowerON_Reset_PC
+                                  ffe00000        65   entry,g         * 
+
+SECTION=C_2
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  ffe00066  ffe0006b         6
+  _s_prcr_masks
+                                  ffe00066         6   data ,l         * 
+
+SECTION=C
+FILE=.\src\FreeRTOS\Source\tasks.obj
+                                  ffe0006c  ffe0006f         4
+  _uxTopUsedPriority
+                                  ffe0006c         4   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe00070  ffe00087        18
+  __CTBL
+                                  ffe00070        18   data ,g         * 
+FILE=_nfiles
+                                  ffe00088  ffe0008b         4
+  __nfiles
+                                  ffe00088         4   data ,g         * 
+FILE=xfoprep
+                                  ffe0008c  ffe000d3        48
+  _init$1
+                                  ffe0008c        48   data ,l         * 
+FILE=xfopen
+                                  ffe000d4  ffe000e3        10
+  _rwacc$1
+                                  ffe000d4        10   data ,l         * 
+FILE=_sbrk_si
+                                  ffe000e4  ffe000e7         4
+  __sbrk_size
+                                  ffe000e4         4   data ,g         * 
+
+SECTION=C$DSEC
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe000e8  ffe0012f        48
+  __DTBL
+                                  ffe000e8        48   data ,g         * 
+
+SECTION=C$BSEC
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe00130  ffe0015f        30
+  __BTBL
+                                  ffe00130        30   data ,g         * 
+
+SECTION=C$VECT
+FILE=.\src\smc_gen\r_bsp\mcu\all\resetprg.obj
+                                  ffe00160  ffe0055f       400
+
+SECTION=D
+FILE=.\src\FreeRTOS\Source\portable\MemMang\heap_4.obj
+                                  ffe00560  ffe00577        18
+FILE=.\src\FreeRTOS\Source\portable\Renesas\RX600v2\port.obj
+                                  ffe00578  ffe0057b         4
+FILE=.\src\FreeRTOS\Source\tasks.obj
+                                  ffe0057c  ffe005af        34
+FILE=.\src\FreeRTOS\Source\timers.obj
+                                  ffe005b0  ffe005bb         c
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  ffe005bc  ffe005cf        14
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  ffe005d0  ffe005d3         4
+FILE=xfiles
+                                  ffe005d4  ffe006ab        d8
+FILE=malloc
+                                  ffe006ac  ffe006b3         8
+
+SECTION=D_1
+FILE=xfiles
+                                  ffe006b4  ffe00703        50
+
+SECTION=W_1
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  ffe00704  ffe00713        10
+
+SECTION=L
+FILE=.\src\FreeRTOS\Source\tasks.obj
+                                  ffe00714  ffe00718         5
+FILE=.\src\FreeRTOS\Source\timers.obj
+                                  ffe0071c  ffe00723         8
+FILE=.\src\FreeRTOS_Timer.obj
+                                  ffe00724  ffe0072d         a
+FILE=.\src\frtos_startup\freertos_start.obj
+                                  ffe00730  ffe00739         a
+FILE=.\src\smc_gen\r_bsp\mcu\all\dbsct.obj
+                                  ffe0073c  ffe0073f         4
+  _deadSpace
+                                  ffe0073c         4   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  ffe00740  ffe00781        42
+
+SECTION=P
+FILE=.\src\FreeRTOS\Source\portable\Renesas\RX600v2\port_asm.obj
+                                  ffe00782  ffe00785         4
+  _vSoftwareInterruptEntry
+                                  ffe00782         0   none ,g         * 
+FILE=.\src\FreeRTOS\Source\event_groups.obj
+                                  ffe00786  ffe00a58       2d3
+  _set_interrupt_mask_from_isr
+                                  ffe00786         c   func ,l         * 
+  _xEventGroupCreate
+                                  ffe00792        1e   func ,g         * 
+  _xEventGroupSync
+                                  ffe007b0        af   func ,g         * 
+  _xEventGroupWaitBits
+                                  ffe0085f        c6   func ,g         * 
+  _xEventGroupClearBits
+                                  ffe00925        2d   func ,g         * 
+  _xEventGroupClearBitsFromISR
+                                  ffe00952        12   func ,g         * 
+  _xEventGroupGetBitsFromISR
+                                  ffe00964        20   func ,g         * 
+  _xEventGroupSetBits
+                                  ffe00984        68   func ,g         * 
+  _vEventGroupDelete
+                                  ffe009ec        36   func ,g         * 
+  _vEventGroupSetBitsCallback
+                                  ffe00a22         3   func ,g         * 
+  _vEventGroupClearBitsCallback
+                                  ffe00a25         3   func ,g         * 
+  _prvTestWaitCondition
+                                  ffe00a28        12   func ,l         * 
+  _xEventGroupSetBitsFromISR
+                                  ffe00a3a        14   func ,g         * 
+  _uxEventGroupGetNumber
+                                  ffe00a4e         8   func ,g         * 
+  _vEventGroupSetNumber
+                                  ffe00a56         3   func ,g         * 
+FILE=.\src\FreeRTOS\Source\list.obj
+                                  ffe00a59  ffe00ad0        78
+  _vListInitialise
+                                  ffe00a59        11   func ,g         * 
+  _vListInitialiseItem
+                                  ffe00a6a         4   func ,g         * 
+  _vListInsertEnd
+                                  ffe00a6e        17   func ,g         * 
+  _vListInsert
+                                  ffe00a85        29   func ,g         * 
+  _uxListRemove
+                                  ffe00aae        23   func ,g         * 
+FILE=.\src\FreeRTOS\Source\portable\MemMang\heap_4.obj
+                                  ffe00ad1  ffe00d65       295
+  _pvPortMalloc
+                                  ffe00ad1        f7   func ,g         * 
+  _vPortFree
+                                  ffe00bc8        67   func ,g         * 
+  _xPortGetFreeHeapSize
+                                  ffe00c2f         9   func ,g         * 
+  _xPortGetMinimumEverFreeHeapSize
+                                  ffe00c38         9   func ,g         * 
+  _vPortInitialiseBlocks
+                                  ffe00c41         1   func ,g         * 
+  _prvHeapInit
+                                  ffe00c42        62   func ,l         * 
+  _prvInsertBlockIntoFreeList
+                                  ffe00ca4        4b   func ,l         * 
+  _vPortGetHeapStats
+                                  ffe00cef        77   func ,g         * 
+FILE=.\src\FreeRTOS\Source\portable\Renesas\RX600v2\port.obj
+                                  ffe00d66  ffe00ede       179
+  _pxPortInitialiseStack
+                                  ffe00d66        53   func ,g         * 
+  _xPortStartScheduler
+                                  ffe00db9        64   func ,g         * 
+  _vTickISR
+                                  ffe00e1d        28   func ,g         * 
+  _vSoftwareInterruptISR
+                                  ffe00e45        87   func ,g         * 
+  _vPortEndScheduler
+                                  ffe00ecc        13   func ,g         * 
+FILE=.\src\FreeRTOS\Source\queue.obj
+                                  ffe00edf  ffe01a14       b36
+  _set_interrupt_mask_from_isr
+                                  ffe00edf         c   func ,l         * 
+  _xQueueGenericReset
+                                  ffe00eeb        6a   func ,g         * 
+  _xQueueGenericCreate
+                                  ffe00f55        4e   func ,g         * 
+  _prvInitialiseNewQueue
+                                  ffe00fa3        21   func ,l         * 
+  _prvInitialiseMutex
+                                  ffe00fc4        14   func ,l         * 
+  _xQueueCreateMutex
+                                  ffe00fd8        15   func ,g         * 
+  _xQueueGiveMutexRecursive
+                                  ffe00fed        31   func ,g         * 
+  _xQueueTakeMutexRecursive
+                                  ffe0101e        3d   func ,g         * 
+  _xQueueCreateCountingSemaphore
+                                  ffe0105b        27   func ,g         * 
+  _xQueueGenericSend
+                                  ffe01082       133   func ,g         * 
+  _xQueueGenericSendFromISR
+                                  ffe011b5        b8   func ,g         * 
+  _xQueueGiveFromISR
+                                  ffe0126d        9c   func ,g         * 
+  _xQueueReceive
+                                  ffe01309       10b   func ,g         * 
+  _xQueueSemaphoreTake
+                                  ffe01414       13e   func ,g         * 
+  _xQueuePeek
+                                  ffe01552       109   func ,g         * 
+  _xQueueReceiveFromISR
+                                  ffe0165b        8d   func ,g         * 
+  _xQueuePeekFromISR
+                                  ffe016e8        60   func ,g         * 
+  _uxQueueMessagesWaiting
+                                  ffe01748        19   func ,g         * 
+  _uxQueueSpacesAvailable
+                                  ffe01761        1d   func ,g         * 
+  _uxQueueMessagesWaitingFromISR
+                                  ffe0177e         f   func ,g         * 
+  _vQueueDelete
+                                  ffe0178d        12   func ,g         * 
+  _uxQueueGetQueueNumber
+                                  ffe0179f         3   func ,g         * 
+  _vQueueSetQueueNumber
+                                  ffe017a2         3   func ,g         * 
+  _ucQueueGetQueueType
+                                  ffe017a5         4   func ,g         * 
+  _prvGetDisinheritPriorityAfterTimeout
+                                  ffe017a9        10   func ,l         * 
+  _prvCopyDataToQueue
+                                  ffe017b9        68   func ,l         * 
+  _prvCopyDataFromQueue
+                                  ffe01821        20   func ,l         * 
+  _prvUnlockQueue
+                                  ffe01841        70   func ,l         * 
+  _prvIsQueueEmpty
+                                  ffe018b1        16   func ,l         * 
+  _xQueueIsQueueEmptyFromISR
+                                  ffe018c7        14   func ,g         * 
+  _prvIsQueueFull
+                                  ffe018db        18   func ,l         * 
+  _xQueueIsQueueFullFromISR
+                                  ffe018f3        16   func ,g         * 
+  _vQueueWaitForMessageRestricted
+                                  ffe01909        3e   func ,g         * 
+  _xQueueCreateSet
+                                  ffe01947         7   func ,g         * 
+  _xQueueAddToSet
+                                  ffe0194e        26   func ,g         * 
+  _xQueueRemoveFromSet
+                                  ffe01974        22   func ,g         * 
+  _xQueueSelectFromSet
+                                  ffe01996        10   func ,g         * 
+  _xQueueSelectFromSetFromISR
+                                  ffe019a6        10   func ,g         * 
+  _prvNotifyQueueSetContainer
+                                  ffe019b6        5f   func ,l         * 
+FILE=.\src\FreeRTOS\Source\stream_buffer.obj
+                                  ffe01a15  ffe0205f       64b
+  _set_interrupt_mask_from_isr
+                                  ffe01a15         c   func ,l         * 
+  _xStreamBufferGenericCreate
+                                  ffe01a21        50   func ,g         * 
+  _vStreamBufferDelete
+                                  ffe01a71        20   func ,g         * 
+  _xStreamBufferReset
+                                  ffe01a91        3e   func ,g         * 
+  _xStreamBufferSetTriggerLevel
+                                  ffe01acf        22   func ,g         * 
+  _xStreamBufferSpacesAvailable
+                                  ffe01af1        22   func ,g         * 
+  _xStreamBufferBytesAvailable
+                                  ffe01b13        11   func ,g         * 
+  _xStreamBufferSend
+                                  ffe01b24        fb   func ,g         * 
+  _xStreamBufferSendFromISR
+                                  ffe01c1f        83   func ,g         * 
+  _prvWriteMessageToBuffer
+                                  ffe01ca2        3b   func ,l         * 
+  _xStreamBufferReceive
+                                  ffe01cdd        bd   func ,g         * 
+  _xStreamBufferNextMessageLengthBytes
+                                  ffe01d9a        38   func ,g         * 
+  _xStreamBufferReceiveFromISR
+                                  ffe01dd2        80   func ,g         * 
+  _prvReadMessageFromBuffer
+                                  ffe01e52        3b   func ,l         * 
+  _xStreamBufferIsEmpty
+                                  ffe01e8d        16   func ,g         * 
+  _xStreamBufferIsFull
+                                  ffe01ea3        1f   func ,g         * 
+  _xStreamBufferSendCompletedFromISR
+                                  ffe01ec2        46   func ,g         * 
+  _xStreamBufferReceiveCompletedFromISR
+                                  ffe01f08        46   func ,g         * 
+  _prvWriteBytesToBuffer
+                                  ffe01f4e        62   func ,l         * 
+  _prvReadBytesFromBuffer
+                                  ffe01fb0        6c   func ,l         * 
+  _prvBytesInBuffer
+                                  ffe0201c        16   func ,l         * 
+  _prvInitialiseNewStreamBuffer
+                                  ffe02032        23   func ,l         * 
+  _uxStreamBufferGetStreamBufferNumber
+                                  ffe02055         3   func ,g         * 
+  _vStreamBufferSetStreamBufferNumber
+                                  ffe02058         3   func ,g         * 
+  _ucStreamBufferGetStreamBufferType
+                                  ffe0205b         5   func ,g         * 
+FILE=.\src\FreeRTOS\Source\tasks.obj
+                                  ffe02060  ffe0354f      14f0
+  _set_interrupt_mask_from_isr
+                                  ffe02060         c   func ,l         * 
+  _xTaskCreate
+                                  ffe0206c        60   func ,g         * 
+  _prvInitialiseNewTask
+                                  ffe020cc        8e   func ,l         * 
+  _prvAddNewTaskToReadyList
+                                  ffe0215a        96   func ,l         * 
+  _vTaskDelete
+                                  ffe021f0        9a   func ,g         * 
+  _xTaskDelayUntil
+                                  ffe0228a        6d   func ,g         * 
+  _vTaskDelay
+                                  ffe022f7        39   func ,g         * 
+  _eTaskGetState
+                                  ffe02330        71   func ,g         * 
+  _uxTaskPriorityGet
+                                  ffe023a1        1c   func ,g         * 
+  _uxTaskPriorityGetFromISR
+                                  ffe023bd        3b   func ,g         * 
+  _vTaskPrioritySet
+                                  ffe023f8        a4   func ,g         * 
+  _vTaskSuspend
+                                  ffe0249c        97   func ,g         * 
+  _prvTaskIsTaskSuspended
+                                  ffe02533        2d   func ,l         * 
+  _vTaskResume
+                                  ffe02560        6c   func ,g         * 
+  _xTaskResumeFromISR
+                                  ffe025cc        a4   func ,g         * 
+  _vTaskStartScheduler
+                                  ffe02670        6e   func ,g         * 
+  _vTaskEndScheduler
+                                  ffe026de        1c   func ,g         * 
+  _vTaskSuspendAll
+                                  ffe026fa         d   func ,g         * 
+  _xTaskResumeAll
+                                  ffe02707        ce   func ,g         * 
+  _xTaskGetTickCount
+                                  ffe027d5         9   func ,g         * 
+  _xTaskGetTickCountFromISR
+                                  ffe027de        19   func ,g         * 
+  _uxTaskGetNumberOfTasks
+                                  ffe027f7         9   func ,g         * 
+  _pcTaskGetName
+                                  ffe02800        1c   func ,g         * 
+  _uxTaskGetSystemState
+                                  ffe0281c        a8   func ,g         * 
+  _xTaskCatchUpTicks
+                                  ffe028c4        26   func ,g         * 
+  _xTaskIncrementTick
+                                  ffe028ea       10c   func ,g         * 
+  _vTaskSwitchContext
+                                  ffe029f6        ae   func ,g         * 
+  _vTaskPlaceOnEventList
+                                  ffe02aa4        26   func ,g         * 
+  _vTaskPlaceOnUnorderedEventList
+                                  ffe02aca        3d   func ,g         * 
+  _vTaskPlaceOnEventListRestricted
+                                  ffe02b07        2d   func ,g         * 
+  _xTaskRemoveFromEventList
+                                  ffe02b34        73   func ,g         * 
+  _vTaskRemoveFromUnorderedEventList
+                                  ffe02ba7        70   func ,g         * 
+  _vTaskSetTimeOutState
+                                  ffe02c17        23   func ,g         * 
+  _vTaskInternalSetTimeOutState
+                                  ffe02c3a        12   func ,g         * 
+  _xTaskCheckForTimeOut
+                                  ffe02c4c        59   func ,g         * 
+  _vTaskMissedYield
+                                  ffe02ca5         a   func ,g         * 
+  _uxTaskGetTaskNumber
+                                  ffe02caf         8   func ,g         * 
+  _vTaskSetTaskNumber
+                                  ffe02cb7         8   func ,g         * 
+  _prvIdleTask
+                                  ffe02cbf        25   func ,l         * 
+  _prvInitialiseTaskLists
+                                  ffe02ce4        60   func ,l         * 
+  _prvCheckTasksWaitingTermination
+                                  ffe02d44        42   func ,l         * 
+  _vTaskGetInfo
+                                  ffe02d86        69   func ,g         * 
+  _prvListTasksWithinSingleList
+                                  ffe02def        55   func ,l         * 
+  _prvTaskCheckFreeStackSpace
+                                  ffe02e44        12   func ,l         * 
+  _uxTaskGetStackHighWaterMark
+                                  ffe02e56        11   func ,g         * 
+  _prvDeleteTCB
+                                  ffe02e67        12   func ,l         * 
+  _prvResetNextTaskUnblockTime
+                                  ffe02e79        1e   func ,l         * 
+  _xTaskGetCurrentTaskHandle
+                                  ffe02e97         9   func ,g         * 
+  _xTaskGetSchedulerState
+                                  ffe02ea0        1e   func ,g         * 
+  _xTaskPriorityInherit
+                                  ffe02ebe        7f   func ,g         * 
+  _xTaskPriorityDisinherit
+                                  ffe02f3d        69   func ,g         * 
+  _vTaskPriorityDisinheritAfterTimeout
+                                  ffe02fa6        7f   func ,g         * 
+  _vTaskEnterCritical
+                                  ffe03025        2d   func ,g         * 
+  _vTaskExitCritical
+                                  ffe03052        2d   func ,g         * 
+  _uxTaskResetEventItemValue
+                                  ffe0307f        17   func ,g         * 
+  _pvTaskIncrementMutexHeldCount
+                                  ffe03096        16   func ,g         * 
+  _ulTaskGenericNotifyTake
+                                  ffe030ac        7c   func ,g         * 
+  _xTaskGenericNotifyWait
+                                  ffe03128        92   func ,g         * 
+  _xTaskGenericNotify
+                                  ffe031ba        e4   func ,g         * 
+  _xTaskGenericNotifyFromISR
+                                  ffe0329e       11d   func ,g         * 
+  _vTaskGenericNotifyGiveFromISR
+                                  ffe033bb        c1   func ,g         * 
+  _xTaskGenericNotifyStateClear
+                                  ffe0347c        37   func ,g         * 
+  _ulTaskGenericNotifyValueClear
+                                  ffe034b3        2d   func ,g         * 
+  _prvAddCurrentTaskToDelayedList
+                                  ffe034e0        70   func ,l         * 
+FILE=.\src\FreeRTOS\Source\timers.obj
+                                  ffe03550  ffe03a7f       530
+  _xTimerCreateTimerTask
+                                  ffe03550        47   func ,g         * 
+  _xTimerCreate
+                                  ffe03597        36   func ,g         * 
+  _prvInitialiseNewTimer
+                                  ffe035cd        37   func ,l         * 
+  _xTimerGenericCommand
+                                  ffe03604        59   func ,g         * 
+  _xTimerGetTimerDaemonTaskHandle
+                                  ffe0365d        16   func ,g         * 
+  _xTimerGetPeriod
+                                  ffe03673         f   func ,g         * 
+  _vTimerSetReloadMode
+                                  ffe03682        26   func ,g         * 
+  _uxTimerGetReloadMode
+                                  ffe036a8        1e   func ,g         * 
+  _xTimerGetExpiryTime
+                                  ffe036c6         f   func ,g         * 
+  _pcTimerGetName
+                                  ffe036d5         f   func ,g         * 
+  _prvProcessExpiredTimer
+                                  ffe036e4        59   func ,l         * 
+  _prvTimerTask
+                                  ffe0373d        11   func ,l         * 
+  _prvProcessTimerOrBlockTask
+                                  ffe0374e        70   func ,l         * 
+  _prvGetNextExpireTime
+                                  ffe037be        18   func ,l         * 
+  _prvSampleTimeNow
+                                  ffe037d6        25   func ,l         * 
+  _prvInsertTimerInActiveList
+                                  ffe037fb        35   func ,l         * 
+  _prvProcessReceivedCommands
+                                  ffe03830        e7   func ,l         * 
+  _prvSwitchTimerLists
+                                  ffe03917        70   func ,l         * 
+  _prvCheckForValidListAndQueue
+                                  ffe03987        4d   func ,l         * 
+  _xTimerIsTimerActive
+                                  ffe039d4        1c   func ,g         * 
+  _pvTimerGetTimerID
+                                  ffe039f0        19   func ,g         * 
+  _vTimerSetTimerID
+                                  ffe03a09        18   func ,g         * 
+  _xTimerPendFunctionCallFromISR
+                                  ffe03a21        22   func ,g         * 
+  _xTimerPendFunctionCall
+                                  ffe03a43        37   func ,g         * 
+  _uxTimerGetTimerNumber
+                                  ffe03a7a         3   func ,g         * 
+  _vTimerSetTimerNumber
+                                  ffe03a7d         3   func ,g         * 
+FILE=.\src\FreeRTOS_Timer.obj
+                                  ffe03a80  ffe03ae5        66
+  _led_toggle
+                                  ffe03a80        18   func ,g         * 
+  _led_timer_callback
+                                  ffe03a98         2   func ,g         * 
+  _main_task
+                                  ffe03a9a        4c   func ,g         * 
+FILE=.\src\frtos_startup\freertos_object_init.obj
+                                  ffe03ae6  ffe03ae7         2
+  _Kernel_Object_init
+                                  ffe03ae6         1   func ,g         * 
+  _Object_init_manual
+                                  ffe03ae7         1   func ,g         * 
+FILE=.\src\frtos_startup\freertos_start.obj
+                                  ffe03ae8  ffe03ba2        bb
+  _vApplicationSetupTimerInterrupt
+                                  ffe03ae8        55   func ,g         * 
+  _vAssertCalled
+                                  ffe03b3d        17   func ,g         * 
+  _vApplicationIdleHook
+                                  ffe03b54         1   func ,g         * 
+  _vApplicationTickHook
+                                  ffe03b55         1   func ,g         * 
+  _vApplicationMallocFailedHook
+                                  ffe03b56        11   func ,g         * 
+  _vApplicationStackOverflowHook
+                                  ffe03b67        11   func ,g         * 
+  _Processing_Before_Start_Kernel
+                                  ffe03b78        2b   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT.obj
+                                  ffe03ba3  ffe03bc3        21
+  _R_Config_PORT_Create
+                                  ffe03ba3        21   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT_user.obj
+                                  ffe03bc4  ffe03bc4         1
+  _R_Config_PORT_Create_UserInit
+                                  ffe03bc4         1   func ,g         * 
+FILE=.\src\smc_gen\general\r_cg_hardware_setup.obj
+                                  ffe03bc5  ffe03c00        3c
+  _r_undefined_exception
+                                  ffe03bc5         1   func ,g         * 
+  _R_Systeminit
+                                  ffe03bc6        3b   func ,g         * 
+FILE=.\src\smc_gen\general\r_smc_cgc.obj
+                                  ffe03c01  ffe03c04         4
+  _R_CGC_Create
+                                  ffe03c01         4   func ,g         * 
+FILE=.\src\smc_gen\general\r_smc_cgc_user.obj
+                                  ffe03c05  ffe03c05         1
+  _R_CGC_Create_UserInit
+                                  ffe03c05         1   func ,g         * 
+FILE=.\src\smc_gen\general\r_smc_interrupt.obj
+                                  ffe03c06  ffe03c06         1
+  _R_Interrupt_Create
+                                  ffe03c06         1   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\board\generic_rx65n\hwsetup.obj
+                                  ffe03c07  ffe03c89        83
+  _hardware_setup
+                                  ffe03c07        12   func ,g         * 
+  _output_ports_configure
+                                  ffe03c19         2   func ,l         * 
+  _interrupts_configure
+                                  ffe03c1b         2   func ,l         * 
+  _peripheral_modules_enable
+                                  ffe03c1d         4   func ,l         * 
+  _bsp_adc_initial_configure
+                                  ffe03c21        3c   func ,l         * 
+  _bsp_bsc_initial_configure
+                                  ffe03c5d        2d   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowlvl.obj
+                                  ffe03c8a  ffe03cab        22
+  _charput
+                                  ffe03c8a        10   func ,g         * 
+  _charget
+                                  ffe03c9a        12   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\lowsrc.obj
+                                  ffe03cac  ffe03e32       187
+  _init_iolib
+                                  ffe03cac        84   func ,g         * 
+  _close_all
+                                  ffe03d30        2a   func ,g         * 
+  _open
+                                  ffe03d5a        67   func ,g         * 
+  _close
+                                  ffe03dc1         3   func ,g         * 
+  _write
+                                  ffe03dc4        37   func ,g         * 
+  _read
+                                  ffe03dfb        34   func ,g         * 
+  _lseek
+                                  ffe03e2f         4   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  ffe03e33  ffe03f02        d0
+  _R_BSP_GetVersion
+                                  ffe03e33         6   func ,g         * 
+  _R_BSP_GetIClkFreqHz
+                                  ffe03e39         4   func ,g         * 
+  _R_BSP_SoftwareDelay
+                                  ffe03e3d        c6   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_cpu.obj
+                                  ffe03f03  ffe04072       170
+  _R_BSP_InterruptsDisable
+                                  ffe03f03         9   func ,g         * 
+  _R_BSP_InterruptsEnable
+                                  ffe03f0c         9   func ,g         * 
+  _R_BSP_CpuInterruptLevelRead
+                                  ffe03f15         8   func ,g         * 
+  _R_BSP_CpuInterruptLevelWrite
+                                  ffe03f1d        5c   func ,g         * 
+  _R_BSP_RegisterProtectEnable
+                                  ffe03f79        67   func ,g         * 
+  _R_BSP_RegisterProtectDisable
+                                  ffe03fe0        5d   func ,g         * 
+  _R_BSP_SoftwareReset
+                                  ffe0403d        11   func ,g         * 
+  _bsp_register_protect_open
+                                  ffe0404e        12   func ,g         * 
+  _bsp_ram_initialize
+                                  ffe04060        13   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_interrupts.obj
+                                  ffe04073  ffe0441e       3ac
+  _R_BSP_InterruptRequestEnable
+                                  ffe04073         e   func ,g         * 
+  _R_BSP_InterruptRequestDisable
+                                  ffe04081         e   func ,g         * 
+  _bsp_interrupt_open
+                                  ffe0408f        1a   func ,g         * 
+  _R_BSP_InterruptWrite
+                                  ffe040a9        31   func ,g         * 
+  _R_BSP_InterruptRead
+                                  ffe040da        1b   func ,g         * 
+  _R_BSP_InterruptControl
+                                  ffe040f5        75   func ,g         * 
+  _bsp_fit_interrupts_control
+                                  ffe0416a        40   func ,l         * 
+  _bsp_gr_int_enable_disable
+                                  ffe041aa       126   func ,l         * 
+  _excep_supervisor_inst_isr
+                                  ffe042d0        17   func ,g         * 
+  _excep_access_isr
+                                  ffe042e7        17   func ,g         * 
+  _excep_undefined_inst_isr
+                                  ffe042fe        17   func ,g         * 
+  _excep_floating_point_isr
+                                  ffe04315        21   func ,g         * 
+  _non_maskable_isr
+                                  ffe04336        b4   func ,g         * 
+  _undefined_interrupt_source_isr
+                                  ffe043ea        17   func ,g         * 
+  _bus_error_isr
+                                  ffe04401        1e   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_locking.obj
+                                  ffe0441f  ffe0444e        30
+  _R_BSP_SoftwareLock
+                                  ffe0441f        10   func ,g         * 
+  _R_BSP_SoftwareUnlock
+                                  ffe0442f         6   func ,g         * 
+  _R_BSP_HardwareLock
+                                  ffe04435         d   func ,g         * 
+  _R_BSP_HardwareUnlock
+                                  ffe04442         d   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\sbrk.obj
+                                  ffe0444f  ffe0446f        21
+  _sbrk
+                                  ffe0444f        21   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_clocks.obj
+                                  ffe04470  ffe04620       1b1
+  _get_iclk_freq_hz
+                                  ffe04470        8a   func ,g         * 
+  _mcu_clock_setup
+                                  ffe044fa         0   func ,g         * 
+  _operating_frequency_set
+                                  ffe044fa        52   func ,l         * 
+  _clock_source_select
+                                  ffe0454c        d5   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_init.obj
+                                  ffe04621  ffe046c1        a1
+  _bsp_non_existent_port_init
+                                  ffe04621        a1   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_interrupts.obj
+                                  ffe046c2  ffe04cca       609
+  _bsp_interrupt_enable_disable
+                                  ffe046c2        c0   func ,g         * 
+  _group_bl0_handler_isr
+                                  ffe04782       203   func ,l         * 
+  _group_bl1_handler_isr
+                                  ffe04985       1ae   func ,l         * 
+  _group_bl2_handler_isr
+                                  ffe04b33        25   func ,l         * 
+  _group_al0_handler_isr
+                                  ffe04b58        c0   func ,l         * 
+  _group_al1_handler_isr
+                                  ffe04c18        6b   func ,l         * 
+  _group_be0_handler_isr
+                                  ffe04c83        48   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\mcu_mapped_interrupts.obj
+                                  ffe04ccb  ffe04ede       214
+  _bsp_mapped_interrupt_open
+                                  ffe04ccb       214   func ,g         * 
+FILE=.\src\smc_gen\r_pincfg\Pin.obj
+                                  ffe04edf  ffe04edf         1
+  _R_Pins_Create
+                                  ffe04edf         1   func ,g         * 
+FILE=freopen
+                                  ffe04ee0  ffe04f0c        2d
+  _freopen
+                                  ffe04ee0        2d   func ,g         * 
+FILE=fclose
+                                  ffe04f0d  ffe04f60        54
+  _fclose
+                                  ffe04f0d        54   func ,g         * 
+FILE=__COM_DIV64u
+                                  ffe04f61  ffe04ff9        99
+  __COM_DIV64u
+                                  ffe04f61         0   none ,g         * 
+  _Loop_Init
+                                  ffe04f6b         0   none ,l         * 
+  _Loop
+                                  ffe04f73         0   none ,l         * 
+  _DivStart
+                                  ffe04f7f         0   none ,l         * 
+  _Success
+                                  ffe04f8d         0   none ,l         * 
+  _DivEnd
+                                  ffe04f99         0   none ,l         * 
+  IXI6DIV
+                                  ffe04f9e         0   none ,l         * 
+  IXI4DIV
+                                  ffe04fb0         0   none ,l         * 
+  IXI2DIV
+                                  ffe04fc0         0   none ,l         * 
+  I8I2DIV
+                                  ffe04fc8         0   none ,l         * 
+  I4I2DIV
+                                  ffe04ff6         0   none ,l         * 
+  _i8divU_End
+                                  ffe04ff9         0   none ,l         * 
+FILE=__initsct
+                                  ffe04ffa  ffe05043        4a
+  __INITSCT
+                                  ffe04ffa         0   none ,g         * 
+  loop1
+                                  ffe0500c         0   none ,l         * 
+  next_loop1
+                                  ffe0501a         0   none ,l         * 
+  loop3
+                                  ffe0502c         0   none ,l         * 
+  next_loop3
+                                  ffe0503d         0   none ,l         * 
+FILE=fflush
+                                  ffe05044  ffe050c5        82
+  _fflush
+                                  ffe05044        82   func ,g         * 
+FILE=xfoprep
+                                  ffe050c6  ffe05197        d2
+  __Foprep
+                                  ffe050c6        d2   func ,g         * 
+FILE=xfofind
+                                  ffe05198  ffe05224        8d
+  __Fofind
+                                  ffe05198        44   func ,g         * 
+  __Fofree
+                                  ffe051dc        49   func ,g         * 
+FILE=free
+                                  ffe05225  ffe052a6        82
+  _free
+                                  ffe05225        82   func ,g         * 
+FILE=xfopen
+                                  ffe052a7  ffe052d6        30
+  __Fopen
+                                  ffe052a7        30   func ,g         * 
+FILE=malloc
+                                  ffe052d7  ffe053b1        db
+  _findmem
+                                  ffe052d7        79   func ,l         * 
+  _malloc
+                                  ffe05350        62   func ,g         * 
+FILE=xgetmem
+                                  ffe053b2  ffe053cc        1b
+  __Getmem
+                                  ffe053b2        1b   func ,g         * 
+
+SECTION=EXCEPTVECT
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  ffffff80  fffffffb        7c
+  _Except_Vectors
+                                  ffffff80        7c   data ,g         * 
+
+SECTION=RESETVECT
+FILE=.\src\smc_gen\r_bsp\mcu\rx65n\vecttbl.obj
+                                  fffffffc  ffffffff         4
+  _Reset_Vector
+                                  fffffffc         4   data ,g         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO

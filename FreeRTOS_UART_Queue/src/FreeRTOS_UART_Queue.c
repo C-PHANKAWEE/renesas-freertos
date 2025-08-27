@@ -11,6 +11,7 @@
 ***********************************************************************************************************************/
 #include <stdio.h>              // For sprintf
 #include <stdlib.h>
+#include <string.h>
 #include "platform.h"           // Located in the FIT BSP module
 #include "r_sci_rx_if.h"        // The SCI module API interface file.
 #include "r_byteq_if.h"         // The BYTEQ module API interface file.
@@ -25,7 +26,8 @@ extern void abort(void);
 sci_cfg_t   my_sci_config;
 sci_err_t   my_sci_err;
 uint8_t     my_char;
-uint8_t my_str[32] = {0};
+uint8_t command_buffer[32] = {0};
+size_t buffer_len = 0;
 
 QueueHandle_t msg_queue;
 
@@ -51,16 +53,11 @@ void receiver_task(void *pv){
 		}*/
 		do
 		{
-			my_sci_err = R_SCI_Receive(g_my_sci_handle, &my_char, 4);
+			my_sci_err = R_SCI_Receive(g_my_sci_handle, &my_char, 1);
 		} while (SCI_ERR_INSUFFICIENT_DATA == my_sci_err);
 
-		if(xQueueSend(msg_queue, (void *) &my_char, 10)){
-			sprintf((char *)my_str, "Queue is full\r\n", &my_char);
-		} else {
-			sprintf((char *)my_str, "Add data to queue : %s\r\n", &my_char);
-			R_SCI_Send(g_my_sci_handle, my_str, 32);
-		}
-
+		buffer_len = strlen((char *) command_buffer);
+		command_buffer[buffer_len] = my_char;
 	}
 }
 
